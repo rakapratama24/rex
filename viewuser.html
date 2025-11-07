@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dashboard Inventory</title>
+<link rel="stylesheet" href="styl.css" />
+<link rel="icon" type="image/png" href="favicon.png" />
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+</head>
+<body>
+<nav class="sidebar">
+<div class="logo">
+<i class="fa-solid fa-boxes-stacked"></i> Inventory
+</div>
+<ul>
+<li class="active"><i class="fa-solid fa-users"></i> Dashboard User</li>
+<li><i class="fa-solid fa-cube"></i> Data Barang</li>
+<li><i class="fa-solid fa-cart-shopping"></i> Data Penjualan</li>
+<li><i class="fa-solid fa-file-invoice"></i> Laporan Penjualan</li>
+</ul>
+<button class="logout-btn">
+<i class="fa-solid fa-right-from-bracket"></i> Logout
+</button>
+</nav>
+
+<div class="burger-menu" id="burgerMenu">
+<i class="fa-solid fa-bars"></i>
+</div>
+
+<main class="main-content">
+<section id="dataUser">
+<h2><i class="fa-solid fa-users"></i> Data User dan Waktu Akses</h2>
+<table>
+<thead>
+<tr>
+<th>Nama User</th>
+<th>Role</th>
+<th>Waktu Akses Terakhir</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Yusra Fernando</td>
+<td>Admin</td>
+<td>2025-11-05 10:00</td>
+</tr>
+<tr>
+<td>Rafi</td>
+<td>Staff</td>
+<td>2025-11-05 09:45</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<section id="dataBarang">
+<h2><i class="fa-solid fa-cube"></i> Data Barang</h2>
+<table>
+<thead>
+<tr>
+<th>Gambar</th>
+<th>Nama Barang</th>
+<th>Stok</th>
+<th>Harga</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<img src="https://via.placeholder.com/60" alt="Barang A" />
+</td>
+<td>Monitor LED 24"</td>
+<td>12</td>
+<td>Rp 1.500.000</td>
+</tr>
+<tr>
+<td>
+<img src="https://via.placeholder.com/60" alt="Barang B" />
+</td>
+<td>Keyboard Mechanical</td>
+<td>25</td>
+<td>Rp 450.000</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<section id="dataPenjualan">
+<h2><i class="fa-solid fa-cart-shopping"></i> Data Penjualan</h2>
+<table>
+<thead>
+<tr>
+<th>ID Transaksi</th>
+<th>Nama Barang</th>
+<th>Jumlah</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TRX001</td>
+<td>Monitor LED 24"</td>
+<td>2</td>
+<td>Rp 3.000.000</td>
+</tr>
+<tr>
+<td>TRX002</td>
+<td>Keyboard Mechanical</td>
+<td>3</td>
+<td>Rp 1.350.000</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<section id="laporan">
+<h2>
+<i class="fa-solid fa-file-invoice"></i> Laporan Penjualan Produk
+</h2>
+<table>
+<thead>
+<tr>
+<th>Nama Barang</th>
+<th>Total Terjual</th>
+<th>Total Pendapatan</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Monitor LED 24"</td>
+<td>20</td>
+<td>Rp 30.000.000</td>
+</tr>
+<tr>
+<td>Keyboard Mechanical</td>
+<td>15</td>
+<td>Rp 6.750.000</td>
+</tr>
+</tbody>
+</table>
+</section>
+</main>
+
+<script>
+const burger = document.getElementById("burgerMenu");
+const sidebar = document.
